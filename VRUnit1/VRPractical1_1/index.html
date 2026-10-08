@@ -3,13 +3,218 @@
     <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-      <a-camera position="0 1.4 5"></a-camera>
+  <a-scene>
+
+     
+    <a-sky src="desert.jpg"></a-sky>
+    <a-plane src="sand.jpg" position="0 0 -4" rotation="-90 0 0" width="100" height="100" repeat="20 8"></a-plane>
+
+    <a-camera position="0 1.4 5"></a-camera>
+
+
+      
+      
+    <a-box wireframe=true position="0 0 0" rotation="0 0 0">
+      <a-torus position="0 1 -7.5" radius="0.75" color="black"></a-torus>
+      <a-circle position="0 1 -7.5" radius="0.25" color="#808080" side="double"></a-circle>
+      <a-torus position="5 1 -7.5" radius="0.75" color="black"></a-torus>
+      <a-circle position="5 1 -7.5" radius="0.25" color="#808080" side="double"></a-circle>
+      <a-torus position="0 1 -2.25" radius="0.75" color="black"></a-torus>
+      <a-circle position="0 1 -2.25" radius="0.25" color="#808080" side="double"></a-circle>
+      <a-torus position="5 1 -2.25" radius="0.75" color="black"></a-torus>
+      <a-circle position="5 1 -2.25" radius="0.25" color="#808080" side="double"></a-circle>
+
+      <a-box position="2.5 1.5 -4.875" width="9" height="4.5" rotation="90 0 0" color="#8B5A2B"></a-box>
+      <a-box position="2.5 2.5 -4.875" width="2.5" height="2" depth="1" rotation="90 0 0" color="#8B5A2B" scale="2 2 2"></a-box>
+
+        
+      <a-box wireframe=true position="0 1 0" width="4" height="4" depth="2">
+      <a-box wireframe=true position="-1 2 -5" rotation="0 0 0">
+        <a-cylinder radius="0.2" height="4" rotation="0 0 45" color="#8B5A2B"></a-cylinder>
+        <a-cylinder radius="0.2" height="2" rotation="0 0 -45" position="-2 0.8 0" color="#8B5A2B"></a-cylinder>
+        <a-cylinder radius="0.1" height="1" rotation="0 0 60" position="-2.05 -0.19 0" color="#C0C0C0"></a-cylinder>
+        <a-cylinder radius="0.1" height="1.5" rotation="90 0 90" position="0.5 0.4 0" color="#C0C0C0"></a-cylinder>
+      </a-box>
+      <a-box wireframe=true position="-1 2 -5" rotation="0 1 0">
+        <a-cylinder radius="0.2" height="4" rotation="0 0 45" color="#8B5A2B"></a-cylinder>
+        <a-cylinder radius="0.2" height="2" rotation="0 0 90" position="0 -1.25 -1.75" color="#FF0000"></a-cylinder>
+        <a-cylinder radius="0.2" height="2" rotation="0 0 90" position="-0.1 -1.25 2" color="#FF0000"></a-cylinder>
+        <a-cylinder radius="0.2" height="2" rotation="0 0 -45" position="-2 0.8 0" color="#8B5A2B"></a-cylinder>
+        <a-cylinder radius="0.4" height="1" position="4 0.75 0" color="#FF8000"></a-cylinder>
+      </a-box>
+      <a-box wireframe=true position="6.1 0.5 -3.2" rotation="0 0 0">
+        <a-cylinder radius="0.25" height="2" rotation="0 0 90"></a-cylinder>
+        <a-box height="2" width="1.5" side="double" position="-3 0.6 0" color="#ADD8E6"></a-box>
+        <a-plane height="1" width="1" side="double" position="-2.5 1 0.8" color="#ADD8E6" rotation="0 50 0"></a-plane>
+      </a-box>
+      <a-box wireframe=true position="6.1 0.5 -6.5" rotation="0 0 0">
+        <a-cylinder radius="0.25" height="2" rotation="0 0 90" color="black"></a-cylinder>
+        <a-box height="2" width="1.5" side="double" position="-3 0.6 -0.05" color="#ADD8E6"></a-box>
+        <a-plane height="1" width="1" side="double" position="-2.5 1 -0.8" color="#ADD8E6" rotation="0 -45 0"></a-plane>
+        <a-cylinder radius="0.8" height="1" color="#C4A484" position="-0.8 0.3 1.6"></a-cylinder>
+      </a-box>
+
+      <a-box wireframe="true" position="5.1 1.8 -4.8" rotation="0 90 0">
+        <a-box width="3.2" height="1.2" depth="0.3" color="white" position="0 0 0"></a-box>
+        <a-box width="3.4" height="0.3" depth="0.4" color="#8B5A2B" position="0 0.6 0"></a-box>
+        <a-sphere radius="0.25" color="#4CAF50" position="-0.55 -0.1 0.15"></a-sphere>
+        <a-sphere radius="0.12" color="black" position="-0.55 -0.1 0.32"></a-sphere>
+        <a-sphere radius="0.25" color="#4CAF50" position="0.55 -0.1 0.15"></a-sphere>
+        <a-sphere radius="0.12" color="black" position="0.55 -0.1 0.32"></a-sphere>
+      </a-box>
+
+         
+      <a-box wireframe=true position="7 0.4 -4.8" rotation="0 90 0">
+        <a-box width="2.6" height="0.9" depth="0.2" color="#2B1B10" position="0 0 0"></a-box>
+        <a-box width="0.6" height="0.8" depth="0.25" color="#FFFFF0" position="-0.35 -0.05 0.1"></a-box>
+        <a-box width="0.6" height="0.8" depth="0.25" color="#FFFFF0" position="0.35 -0.05 0.1"></a-box>
+        <a-box width="2.8" height="0.2" depth="0.3" color="#8B5A2B" position="0 0.5 0.05"></a-box>
+      </a-box>
+
+        <a-plane src="realmater.png" width="3" height="1" side="double" position="-2.05 0.5 -4.8" rotation="0 90 0"></a-plane>
+        </a-box>
+
+      </a-box>
+      
+    <a-box wireframe=true position="0 0 0" rotation="50 0 0">
+      <a-torus position="0 1 -7.5" radius="0.75" color="black"></a-torus>
+      <a-circle position="0 1 -7.5" radius="0.25" color="#808080" side="double"></a-circle>
+      <a-torus position="5 1 -7.5" radius="0.75" color="black"></a-torus>
+      <a-circle position="5 1 -7.5" radius="0.25" color="#808080" side="double"></a-circle>
+      <a-torus position="0 1 -2.25" radius="0.75" color="black"></a-torus>
+      <a-circle position="0 1 -2.25" radius="0.25" color="#808080" side="double"></a-circle>
+      <a-torus position="5 1 -2.25" radius="0.75" color="black"></a-torus>
+      <a-circle position="5 1 -2.25" radius="0.25" color="#808080" side="double"></a-circle>
+
+      <a-box position="2.5 1.5 -4.875" width="9" height="4.5" rotation="90 0 0" color="#8B5A2B"></a-box>
+      <a-box position="2.5 2.5 -4.875" width="2.5" height="2" depth="1" rotation="90 0 0" color="#8B5A2B" scale="2 2 2"></a-box>
+
+        
+      <a-box wireframe=true position="0 1 0" width="4" height="4" depth="2">
+      <a-box wireframe=true position="-1 2 -5" rotation="0 0 0">
+        <a-cylinder radius="0.2" height="4" rotation="0 0 45" color="#8B5A2B"></a-cylinder>
+        <a-cylinder radius="0.2" height="2" rotation="0 0 -45" position="-2 0.8 0" color="#8B5A2B"></a-cylinder>
+        <a-cylinder radius="0.1" height="1" rotation="0 0 60" position="-2.05 -0.19 0" color="#C0C0C0"></a-cylinder>
+        <a-cylinder radius="0.1" height="1.5" rotation="90 0 90" position="0.5 0.4 0" color="#C0C0C0"></a-cylinder>
+      </a-box>
+      <a-box wireframe=true position="-1 2 -5" rotation="0 1 0">
+        <a-cylinder radius="0.2" height="4" rotation="0 0 45" color="#8B5A2B"></a-cylinder>
+        <a-cylinder radius="0.2" height="2" rotation="0 0 90" position="0 -1.25 -1.75" color="#FF0000"></a-cylinder>
+        <a-cylinder radius="0.2" height="2" rotation="0 0 90" position="-0.1 -1.25 2" color="#FF0000"></a-cylinder>
+        <a-cylinder radius="0.2" height="2" rotation="0 0 -45" position="-2 0.8 0" color="#8B5A2B"></a-cylinder>
+        <a-cylinder radius="0.4" height="1" position="4 0.75 0" color="#FF8000"></a-cylinder>
+      </a-box>
+      <a-box wireframe=true position="6.1 0.5 -3.2" rotation="0 0 0">
+        <a-cylinder radius="0.25" height="2" rotation="0 0 90"></a-cylinder>
+        <a-box height="2" width="1.5" side="double" position="-3 0.6 0" color="#ADD8E6"></a-box>
+        <a-plane height="1" width="1" side="double" position="-2.5 1 0.8" color="#ADD8E6" rotation="0 50 0"></a-plane>
+      </a-box>
+      <a-box wireframe=true position="6.1 0.5 -6.5" rotation="0 0 0">
+        <a-cylinder radius="0.25" height="2" rotation="0 0 90" color="black"></a-cylinder>
+        <a-box height="2" width="1.5" side="double" position="-3 0.6 -0.05" color="#ADD8E6"></a-box>
+        <a-plane height="1" width="1" side="double" position="-2.5 1 -0.8" color="#ADD8E6" rotation="0 -45 0"></a-plane>
+        <a-cylinder radius="0.8" height="1" color="#C4A484" position="-0.8 0.3 1.6"></a-cylinder>
+      </a-box>
+
+      <a-box wireframe="true" position="5.1 1.8 -4.8" rotation="0 90 0">
+        <a-box width="3.2" height="1.2" depth="0.3" color="white" position="0 0 0"></a-box>
+        <a-box width="3.4" height="0.3" depth="0.4" color="#8B5A2B" position="0 0.6 0"></a-box>
+        <a-sphere radius="0.25" color="#4CAF50" position="-0.55 -0.1 0.15"></a-sphere>
+        <a-sphere radius="0.12" color="black" position="-0.55 -0.1 0.32"></a-sphere>
+        <a-sphere radius="0.25" color="#4CAF50" position="0.55 -0.1 0.15"></a-sphere>
+        <a-sphere radius="0.12" color="black" position="0.55 -0.1 0.32"></a-sphere>
+      </a-box>
+
+         
+      <a-box wireframe=true position="7 0.4 -4.8" rotation="0 90 0">
+        <a-box width="2.6" height="0.9" depth="0.2" color="#2B1B10" position="0 0 0"></a-box>
+        <a-box width="0.6" height="0.8" depth="0.25" color="#FFFFF0" position="-0.35 -0.05 0.1"></a-box>
+        <a-box width="0.6" height="0.8" depth="0.25" color="#FFFFF0" position="0.35 -0.05 0.1"></a-box>
+        <a-box width="2.8" height="0.2" depth="0.3" color="#8B5A2B" position="0 0.5 0.05"></a-box>
+      </a-box>
+
+        <a-plane src="realmater.png" width="3" height="1" side="double" position="-2.05 0.5 -4.8" rotation="0 90 0"></a-plane>
+        </a-box>
+
+      </a-box>
+
+
+    <a-box wireframe=true position="0 0 0" rotation="100 50 50">
+      <a-torus position="0 1 -7.5" radius="0.75" color="black"></a-torus>
+      <a-circle position="0 1 -7.5" radius="0.25" color="#808080" side="double"></a-circle>
+      <a-torus position="5 1 -7.5" radius="0.75" color="black"></a-torus>
+      <a-circle position="5 1 -7.5" radius="0.25" color="#808080" side="double"></a-circle>
+      <a-torus position="0 1 -2.25" radius="0.75" color="black"></a-torus>
+      <a-circle position="0 1 -2.25" radius="0.25" color="#808080" side="double"></a-circle>
+      <a-torus position="5 1 -2.25" radius="0.75" color="black"></a-torus>
+      <a-circle position="5 1 -2.25" radius="0.25" color="#808080" side="double"></a-circle>
+
+      <a-box position="2.5 1.5 -4.875" width="9" height="4.5" rotation="90 0 0" color="#8B5A2B"></a-box>
+      <a-box position="2.5 2.5 -4.875" width="2.5" height="2" depth="1" rotation="90 0 0" color="#8B5A2B" scale="2 2 2"></a-box>
+
+        
+      <a-box wireframe=true position="0 1 0" width="4" height="4" depth="2">
+      <a-box wireframe=true position="-1 2 -5" rotation="0 0 0">
+        <a-cylinder radius="0.2" height="4" rotation="0 0 45" color="#8B5A2B"></a-cylinder>
+        <a-cylinder radius="0.2" height="2" rotation="0 0 -45" position="-2 0.8 0" color="#8B5A2B"></a-cylinder>
+        <a-cylinder radius="0.1" height="1" rotation="0 0 60" position="-2.05 -0.19 0" color="#C0C0C0"></a-cylinder>
+        <a-cylinder radius="0.1" height="1.5" rotation="90 0 90" position="0.5 0.4 0" color="#C0C0C0"></a-cylinder>
+      </a-box>
+      <a-box wireframe=true position="-1 2 -5" rotation="0 1 0">
+        <a-cylinder radius="0.2" height="4" rotation="0 0 45" color="#8B5A2B"></a-cylinder>
+        <a-cylinder radius="0.2" height="2" rotation="0 0 90" position="0 -1.25 -1.75" color="#FF0000"></a-cylinder>
+        <a-cylinder radius="0.2" height="2" rotation="0 0 90" position="-0.1 -1.25 2" color="#FF0000"></a-cylinder>
+        <a-cylinder radius="0.2" height="2" rotation="0 0 -45" position="-2 0.8 0" color="#8B5A2B"></a-cylinder>
+        <a-cylinder radius="0.4" height="1" position="4 0.75 0" color="#FF8000"></a-cylinder>
+      </a-box>
+      <a-box wireframe=true position="6.1 0.5 -3.2" rotation="0 0 0">
+        <a-cylinder radius="0.25" height="2" rotation="0 0 90"></a-cylinder>
+        <a-box height="2" width="1.5" side="double" position="-3 0.6 0" color="#ADD8E6"></a-box>
+        <a-plane height="1" width="1" side="double" position="-2.5 1 0.8" color="#ADD8E6" rotation="0 50 0"></a-plane>
+      </a-box>
+      <a-box wireframe=true position="6.1 0.5 -6.5" rotation="0 0 0">
+        <a-cylinder radius="0.25" height="2" rotation="0 0 90" color="black"></a-cylinder>
+        <a-box height="2" width="1.5" side="double" position="-3 0.6 -0.05" color="#ADD8E6"></a-box>
+        <a-plane height="1" width="1" side="double" position="-2.5 1 -0.8" color="#ADD8E6" rotation="0 -45 0"></a-plane>
+        <a-cylinder radius="0.8" height="1" color="#C4A484" position="-0.8 0.3 1.6"></a-cylinder>
+      </a-box>
+
+      <a-box wireframe="true" position="5.1 1.8 -4.8" rotation="0 90 0">
+        <a-box width="3.2" height="1.2" depth="0.3" color="white" position="0 0 0"></a-box>
+        <a-box width="3.4" height="0.3" depth="0.4" color="#8B5A2B" position="0 0.6 0"></a-box>
+        <a-sphere radius="0.25" color="#4CAF50" position="-0.55 -0.1 0.15"></a-sphere>
+        <a-sphere radius="0.12" color="black" position="-0.55 -0.1 0.32"></a-sphere>
+        <a-sphere radius="0.25" color="#4CAF50" position="0.55 -0.1 0.15"></a-sphere>
+        <a-sphere radius="0.12" color="black" position="0.55 -0.1 0.32"></a-sphere>
+      </a-box>
+
+         
+      <a-box wireframe=true position="7 0.4 -4.8" rotation="0 90 0">
+        <a-box width="2.6" height="0.9" depth="0.2" color="#2B1B10" position="0 0 0"></a-box>
+        <a-box width="0.6" height="0.8" depth="0.25" color="#FFFFF0" position="-0.35 -0.05 0.1"></a-box>
+        <a-box width="0.6" height="0.8" depth="0.25" color="#FFFFF0" position="0.35 -0.05 0.1"></a-box>
+        <a-box width="2.8" height="0.2" depth="0.3" color="#8B5A2B" position="0 0.5 0.05"></a-box>
+      </a-box>
+
+        <a-plane src="realmater.png" width="3" height="1" side="double" position="-2.05 0.5 -4.8" rotation="0 90 0"></a-plane>
+        </a-box>
+
+      </a-box>
+
+    <a-box wireframe=true position="12 0 -6" rotation="0 90 0">
+      <a-cylinder radius="0.4" height="4" position="0 2 0" color="#2E7D32"></a-cylinder>
+      <a-sphere radius="0.4" position="0 4 0" color="#2E7D32"></a-sphere>
+
+      <a-cylinder radius="0.25" height="1.2" rotation="0 0 90" position="0.8 2 0" color="#388E3C"></a-cylinder>
+      <a-sphere radius="0.25" position="1.4 2 0" color="#388E3C"></a-sphere>
+      <a-cylinder radius="0.25" height="1.5" position="1.4 2.75 0" color="#388E3C"></a-cylinder>
+      <a-sphere radius="0.25" position="1.4 3.5 0" color="#388E3C"></a-sphere>
+
+      <a-cylinder radius="0.25" height="1.2" rotation="0 0 90" position="-0.8 2.8 0" color="#388E3C"></a-cylinder>
+      <a-sphere radius="0.25" position="-1.4 2.8 0" color="#388E3C"></a-sphere>
+      <a-cylinder radius="0.25" height="1.2" position="-1.4 3.4 0" color="#388E3C"></a-cylinder>
+      <a-sphere radius="0.25" position="-1.4 4 0" color="#388E3C"></a-sphere>
+    </a-box>
     </a-scene>
   </body>
 </html>
