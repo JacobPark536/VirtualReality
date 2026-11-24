@@ -11,29 +11,37 @@
 */
 
 let maze = [
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
+  "xxxxxxxxxxxxxxx",
+  "--------------x",
+  "x-xxxxx-x-x-xxx",
+  "x-----x-x-----x",
+  "x-xxx-xxx-xxx-x",
+  "x---x-x---x---x",
+  "x-x-x-xxxxx-xxx",
+  "x-x-x-----x---x",
+  "x-xxxxx-xxxxx-x",
+  "x-----x-----x--",
+  "xxxxxxxxxxxxxxx",
 ];
+let scene;
+
 
 /* Challenge 2
    Add appropriate classes to use as objects in your map.  Choose characters to represent these objects and position them on the map.   In Challenge 5 and 6, you will generate the map using the character representation of the objects you chose to place in the world. Get Creative!
 */
 
-let scene;
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   for(let r = 0; r < maze.length; r++){
+    let row = maze[r];
+    let cols = row.split("");
+    for(let c = 0; c < cols.length; c++){
+      if(cols[c] == "x"){
+        new Wall(c*4,7,r*4);
+      }
+    }
+  
     /* Challenge 3
       Choose a technique to traverse the each character in the string.
     */ 
